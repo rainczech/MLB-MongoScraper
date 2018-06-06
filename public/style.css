@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Dosis', sans-serif;
+    text-align: right;
+    color: white;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("./img/ball-baseball-black-and-white-773063.jpg");
+    background-size: 100%;
+}
+
+.jumbotron {
+    background-color: seagreen;
+}
+
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Open Sans', sans-serif; */

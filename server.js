@@ -1,6 +1,8 @@
+// dependnecies
+
 const express = require("express");
 
-const app = express();
+
 const PORT = process.env.PORT || 8080;
 const exphbs = require("express-handlebars");
 const bodyParser = require ("body-parser");
@@ -15,6 +17,12 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 
+// initializing express
+const app = express();
+
+
+
+// add routes
 const htmlRoutes = require("");
 const apiRoutes = require("");
 
