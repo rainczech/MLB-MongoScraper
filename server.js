@@ -13,21 +13,25 @@ const db = require("./models");
 const PORT = process.env.PORT || 8080;
 
 
+// initializing express
+const app = express();
+
+// middleware
 // serve static content form public directory
 app.use(express.static("public"));
 // Use morgan logger for logging requests
 app.use(logger("dev"));
+// body-parse for handling form submissions
 app.use(bodyParser.urlencoded({extended:true}));
-
 //  parse application/json
 app.use(bodyParse.json());
 
+// set up handlebars
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 
-// initializing express
-const app = express();
+
 
 // connect to MongoDB
 // fill in route
