@@ -29,13 +29,12 @@ router.get("/scrape", function(req, res) {
             console.log(dbArticle);
           })
           .catch(function(err) {
-            // If an error occurred, send it to the client
             return res.json(err);
           });
       });
-  
+        res.render("index", dbArticle);
       // If we were able to successfully scrape and save an Article, send a message to the client
-      res.send("Scrape Complete");
+      // res.send("Scrape Complete");
     });
   });
   
