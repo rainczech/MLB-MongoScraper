@@ -6,8 +6,4 @@ router.get('/', (req, res) => {
     res.render("index");
 });
 
-// router.get('/articles', (req, res) => {
-//     res.render("index", {dbArticle});
-// });
-
 module.exports = router
