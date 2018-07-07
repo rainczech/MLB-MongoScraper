@@ -6,19 +6,30 @@ const Schema = mongoose.Schema;
 
 const ArticleSchema = new Schema({
   // title of article
-  title: {
+  headline: {
     type: String,
-    require: true
+    require: true,
+    unique: {index: {unique: true}}
   },
 //  link to the article
-  link: {
+  url: {
     type: String,
     required: true
   },
+// summary
+  summary: {
+    type: String,
+    required: true
+  },
+  // date
+  date: {
+    type: Date,
+    default: Date.now
+  },
   // note
-  note: {
-    type: Schema.Types.ObjectId,
-    ref: "Note"
+  saved: {
+    type: Boolean,
+    default: false
   }
 });
 
