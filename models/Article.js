@@ -9,18 +9,18 @@ const ArticleSchema = new Schema({
   headline: {
     type: String,
     require: true,
-    unique: {index: {unique: true}}
+    unique: { index: { unique: true} }
   },
 //  link to the article
-  url: {
+  link: {
     type: String,
     required: true
   },
 // summary
-  summary: {
-    type: String,
-    required: true
-  },
+  // summary: {
+  //   type: String,
+  //   required: true
+  // },
   // date
   date: {
     type: Date,

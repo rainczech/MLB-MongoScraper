@@ -2,7 +2,7 @@ var router = require("express").Router();
 
 // This route renders the homepage
 router.get("/", function(req, res) {
-  res.render("index");
+  res.render("home");
 });
 
 // This route renders the saved handledbars page
