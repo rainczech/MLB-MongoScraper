@@ -21,7 +21,7 @@ router.get("/scrape", function(req, res) {
         result.link = $(this)
           .parent("a")
           .attr("href");
-        result.summary = $(this)
+        // result.summary = $(this)
           
         // Create a new Article using the `result` object built from scraping
         db.Article.create(result)
